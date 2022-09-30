@@ -1,0 +1,179 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+body .social {
+  position: absolute;
+  left: 50%;
+  bottom: -1%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .social img {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  text-shadow: 0 0 20px 2px black;
+}
+body .label {
+  position: absolute;
+  left: 50%;
+  bottom: 4%;
+  transform: translate(-50%, -50%);
+  font-family: "Mr De Haviland", cursive;
+  font-size: 2em;
+  font-weight: 900;
+  text-shadow: 2px 2px 10px #424242;
+}
+body .screen {
+  position: absolute;
+  z-index: 333;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 216px;
+  height: 248px;
+  border-radius: 50px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000000;
+  box-shadow: inset 0 0 1px 3px #dadada, inset 0 0 3px 5px #dadada, inset 0 0 2px 9px rgba(0, 0, 0, 0.9), inset 0 0 0 10px #dadada, inset 0 0 0 17px black, inset 0 0 11px 20px #424242, 0 0 100px 2px black;
+}
+body .screen #innerScreen {
+  width: 81%;
+  height: 86%;
+  background-color: transparent;
+  margin-top: 17px;
+  margin-left: 20px;
+  border-radius: 30px;
+}
+body .screen #innerScreen #display {
+  width: 100%;
+  height: 18%;
+  border-radius: inherit;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 8px;
+  overflow: hidden;
+}
+body .screen .row {
+  padding-left: 7px;
+  width: 100%;
+  height: 14%;
+  border-radius: inherit;
+  display: flex;
+  margin-top: 2px;
+  align-items: center;
+}
+body .screen .row #clean,
+body .screen .row #negativePositive,
+body .screen .row #tip {
+  background-color: #aaaaaa;
+  color: #000000;
+}
+body .screen #division {
+  font-size: 17px;
+}
+body .btn {
+  color: white;
+  width: 22%;
+  height: 25px;
+  border-radius: 40px;
+  background-color: #ff8800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+body .btn:hover {
+  transform: scale(1.07);
+}
+body .number,
+body #point {
+  background-color: #424242;
+  color: white;
+}
+body .zero {
+  width: 46%;
+}
+
+.controller {
+  position: absolute;
+  top: 64px;
+  right: -9px;
+  width: 8px;
+  height: 30px;
+  border-radius: 100px;
+  background: linear-gradient(to bottom, #aaaaaa, white);
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.8), inset 0 3px 2px 0 #dadada, inset 0 6px 2px 0 rgba(0, 0, 0, 0.712), inset 0 1.3px 0 0 rgba(0, 0, 0, 0.8), inset 0 -1px 2px 0 rgba(0, 0, 0, 0.8), inset 0 -3px 2px 0 #dadada, inset 0 -6px 2px 0 rgba(0, 0, 0, 0.712), inset 0 -1.3px 0 0 rgba(0, 0, 0, 0.8), -4px 0 3px 0 rgba(0, 0, 0, 0.822);
+}
+
+.right-button {
+  position: absolute;
+  top: 125px;
+  right: -2px;
+  width: 4px;
+  height: 59px;
+  border-radius: 50px;
+  border: 1px solid rgba(136, 134, 134, 0.432);
+  z-index: 777;
+  background: linear-gradient(to bottom, #aaaaaa, white);
+  box-shadow: inset 0 4px 3px 0 rgba(0, 0, 0, 0.438), inset 0 -5px 2.5px 0 rgba(0, 0, 0, 0.733);
+}
+
+.container {
+  width: 185px;
+  height: 470px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 100px;
+  box-shadow: inset 0 0 100px 0 black;
+  border-top: none;
+}
+.container .watchband {
+  position: absolute;
+  width: 180px;
+  height: 250px;
+  border: 1px solid white;
+  border-radius: 80px;
+  box-shadow: 0 9px 7px 0 #d6d6d6, 0 9px 7px 0 #d6d6d6, 0 -9px 7px 0 #d6d6d6, 0 -9px 7px 0 #d6d6d6;
+  background-color: white;
+}
+.container .watchband:nth-of-type(1) {
+  top: -108px;
+  left: -81%;
+}
+.container .watchband:nth-of-type(2) {
+  top: -108px;
+  left: 83%;
+}
+.container .watchband:nth-of-type(3) {
+  top: 328px;
+  left: -81%;
+}
+.container .watchband:nth-of-type(4) {
+  top: 328px;
+  left: 83%;
+}

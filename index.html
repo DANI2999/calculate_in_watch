@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>calculate</title>
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        <div class="screen">
+
+            <section id="innerScreen">
+                <div id="display">0</div>
+                <div class="row">
+                    <div id="clean" class="btn">C</div>
+                    <div id="negativePositive" class="btn" onclick="negativePositive()">±</div>
+                    <div id="AC" class="btn" onclick="_clear()">AC</div>
+                    <div id="division" class="btn operator" onclick="division()">÷</div>
+                </div>
+                <div class="row">
+                    <div class="btn number" onclick="addDigit('7')">7</div>
+                    <div class="btn number" onclick="addDigit('8')">8</div>
+                    <div class="btn number" onclick="addDigit('9')">9</div>
+                    <div id="multiplication" class="btn operator" onclick="multiplication()">×</div>
+                </div>
+                <div class="row">
+                    <div class="btn number" onclick="addDigit('4')">4</div>
+                    <div class="btn number" onclick="addDigit('5')">5</div>
+                    <div class="btn number" onclick="addDigit('6')">6</div>
+                    <div id="minus" class="btn operator" onclick="subtraction()">–</div>
+                </div>
+                <div class="row">
+                    <div class="btn number" onclick="addDigit('1')">1</div>
+                    <div class="btn number" onclick="addDigit('2')">2</div>
+                    <div class="btn number" onclick="addDigit('3')">3</div>
+                    <div id="plus" class="btn operator" onclick="sum()">+</div>
+                </div>
+                <div class="row last-row">
+                    <div class="btn number zero" onclick="addDigit('0')">0</div>
+                    <div id="point" class="btn" data-status="off" onclick="_decimal()">․</div>
+                    <div id="equal" class="btn">=</div>
+                </div>
+            </section>
+
+            <span class="controller"></span>
+            <span class="right-button"></span>
+        </div>
+        <div class="container">
+            <div class="watchband"></div>
+            <div class="watchband"></div>
+            <div class="watchband"></div>
+            <div class="watchband"></div>
+            <div class="topround"></div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
