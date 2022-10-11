@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: white;
+  background-color: grey;
 }
 body .social {
   position: absolute;
